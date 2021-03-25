@@ -6,3 +6,7 @@
 [ zxc ] to [ qwe ]: 55555555
 [ asd ] to [ zxc ]: 555555555
 [ qwe ]: end
+[ zxc ]: ldskmc
+[ zxc ] to [ qwe ]: lkdscm
+[ qwe ] to [ zxc ]: slkdcmsd
+[ qwe ]: lskcdm
