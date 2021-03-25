@@ -1,0 +1,13 @@
+[ vasya ]: 3333333333
+[ vasya ]: dslc,sd
+[ vasya ]: sd;lvmsd
+[ vasya ]: sd;vlmsd
+[ qwe ]: 333333333333
+[ vasya ]: 333333333
+[ asd ]: 3333333333
+[ asd ] to [ vasya ]: 333333333333
+[ vasya ] to [ qwe ]: 33333333
+[ vasya ] to [ asd ]: 3333333333
+[ qwe ] to [ vasya ]: 333333333
+[ vasya ]: end
+[ qwe ]: end

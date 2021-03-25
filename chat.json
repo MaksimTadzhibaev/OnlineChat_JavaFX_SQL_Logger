@@ -1,0 +1,38 @@
+[
+	{
+		"id" : 1,
+		"nick" : "asd",
+		"login" : "asd",
+		"password" : "asd"
+	},
+	{
+		"id" : 2,
+		"nick" : "qwe",
+		"login" : "qwe",
+		"password" : "qwe"
+	},
+	{
+		"id" : 3,
+		"nick" : "zxc",
+		"login" : "zxc",
+		"password" : "zxc"
+	},
+	{
+		"id" : 4,
+		"nick" : "vasya",
+		"login" : "123",
+		"password" : "123"
+	},
+	{
+		"id" : 5,
+		"nick" : "321",
+		"login" : "321",
+		"password" : "321"
+	},
+	{
+		"id" : 7,
+		"nick" : "ewq",
+		"login" : "ewq",
+		"password" : "ewq"
+	}
+]

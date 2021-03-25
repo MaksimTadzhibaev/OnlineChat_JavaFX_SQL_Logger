@@ -1,0 +1,14 @@
+[ qwe ]: fkdlvnksd
+[ qwe ]: lsdnvlks
+[ qwe ] to [ asd ]: ;lsdmvs
+[ asd ]: 5555555555555
+[ asd ] to [ zxc ]: 555555555
+[ qwe ]: 333333333333
+[ vasya ]: 333333333
+[ asd ]: 3333333333
+[ asd ] to [ vasya ]: 333333333333
+[ asd ] to [ qwe ]: 333333333
+[ vasya ] to [ asd ]: 3333333333
+[ qwe ] to [ asd ]: 3333333333
+[ asd ] to [ qwe ]: привет
+[ qwe ]: пока
