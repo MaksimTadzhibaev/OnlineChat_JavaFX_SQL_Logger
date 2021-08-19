@@ -1,0 +1,40 @@
+мар 25, 2021 11:44:21 PM server.SimpleAuthServise connect
+INFO: Connected!
+мар 25, 2021 11:44:58 PM server.SimpleAuthServise connect
+INFO: Connected!
+мар 25, 2021 11:48:54 PM server.SimpleAuthServise connect
+INFO: Connected!
+мар 25, 2021 11:48:54 PM server.Server <init>
+INFO: Server started
+мар 25, 2021 11:58:25 PM server.SimpleAuthServise connect
+INFO: Connected!
+мар 25, 2021 11:58:25 PM server.Server <init>
+INFO: Server started
+мар 25, 2021 11:58:32 PM server.Server <init>
+INFO: Client connected
+мар 25, 2021 11:58:32 PM server.Server <init>
+INFO: client: /127.0.0.1:64275
+мар 25, 2021 11:58:32 PM server.ClientHandler lambda$new$0
+INFO: client: /127.0.0.1:64275 connected with nick: qwe
+мар 25, 2021 11:58:46 PM server.Server <init>
+INFO: Client connected
+мар 25, 2021 11:58:46 PM server.Server <init>
+INFO: client: /127.0.0.1:64281
+мар 25, 2021 11:58:46 PM server.ClientHandler lambda$new$0
+INFO: client: /127.0.0.1:64281 connected with nick: zxc
+мар 25, 2021 11:59:00 PM server.ClientHandler lambda$new$0
+INFO: Client disconnected: qwe
+мар 25, 2021 11:59:05 PM server.ClientHandler lambda$new$0
+INFO: Client disconnected: zxc
+мар 25, 2021 11:59:53 PM server.SimpleAuthServise connect
+INFO: Connected!
+мар 25, 2021 11:59:53 PM server.Server <init>
+INFO: Server started
+мар 26, 2021 12:00:06 AM server.Server <init>
+INFO: Client connected
+мар 26, 2021 12:00:06 AM server.Server <init>
+INFO: client: /127.0.0.1:64298
+мар 26, 2021 12:00:06 AM server.ClientHandler lambda$new$0
+INFO: client: /127.0.0.1:64298 connected with nick: qwe
+мар 26, 2021 12:00:07 AM server.ClientHandler lambda$new$0
+INFO: Client disconnected: qwe

@@ -51,3 +51,7 @@ not found user: asd
 [ qwe ] to [ qwe ]: 777777777777
 [ asd ] to [ qwe ]: привет
 [ qwe ]: пока
+[ zxc ]: ldskmc
+[ zxc ] to [ qwe ]: lkdscm
+[ qwe ] to [ zxc ]: slkdcmsd
+[ qwe ]: lskcdm

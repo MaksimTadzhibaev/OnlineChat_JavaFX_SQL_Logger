@@ -9,6 +9,7 @@ import java.net.Socket;
 import java.net.SocketTimeoutException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.logging.Logger;
 
 public class ClientHandler {
     private DataInputStream in;
@@ -16,6 +17,7 @@ public class ClientHandler {
 
     private String nickname;
     private String login;
+    private static Logger logger = Logger.getLogger(ClientHandler.class.getName());
 
     public ClientHandler(Server server, Socket socket) {
         try {
@@ -36,7 +38,9 @@ public class ClientHandler {
                         //если команда отключиться
                         if (str.equals(Command.END)) {
                             out.writeUTF(Command.END);
-                            throw new RuntimeException("Клиент захотел отключиться");
+                            RuntimeException e = new RuntimeException("Клиент захотел отключиться");
+                            logger.severe("Клиент захотел отключиться");
+                            throw e;
                         }
 
                         //если команда аутентификация
@@ -53,7 +57,7 @@ public class ClientHandler {
                                     nickname = newNick;
                                     sendMsg(Command.AUTH_OK + " " + nickname);
                                     server.subscribe(this);
-                                    System.out.println("client: " + socket.getRemoteSocketAddress() +
+                                    logger.info("client: " + socket.getRemoteSocketAddress() +
                                             " connected with nick: " + nickname);
                                     socket.setSoTimeout(0);
                                     break;
@@ -126,7 +130,7 @@ public class ClientHandler {
                     e.printStackTrace();
                 } finally {
                     server.unsubscribe(this);
-                    System.out.println("Client disconnected: " + nickname);
+                    logger.info("Client disconnected: " + nickname);
                     try {
                         socket.close();
                     } catch (IOException e) {

@@ -2,6 +2,7 @@ package server;
 
 
 import java.sql.*;
+import java.util.logging.Logger;
 
 public class SimpleAuthServise implements AuthService {
     private static Connection connection;
@@ -9,6 +10,7 @@ public class SimpleAuthServise implements AuthService {
     private static PreparedStatement psGetNick;
     private static PreparedStatement psRegistration;
     private static PreparedStatement psChangeNick;
+    private static Logger logger = Logger.getLogger(SimpleAuthServise.class.getName());
 
     public static boolean connect() {
         try {
@@ -16,7 +18,7 @@ public class SimpleAuthServise implements AuthService {
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/chat", "root", "182824");
             statement = connection.createStatement();
             prepareStatements();
-            System.out.println("Connected!");
+            logger.info("Connected!");
             return true;
         } catch (Exception e) {
             e.printStackTrace();
@@ -32,7 +34,7 @@ public class SimpleAuthServise implements AuthService {
         }
         try {
             connection.close();
-            System.out.println("Disconnected!");
+            logger.info("Disconnected!");
         } catch (SQLException e) {
             e.printStackTrace();
         }

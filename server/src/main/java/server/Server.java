@@ -7,29 +7,33 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.logging.Logger;
 
 public class Server {
     private ServerSocket server;
     private Socket socket;
     private List<ClientHandler> clients;
     private AuthService authService;
+    private static Logger logger = Logger.getLogger(Server.class.getName());
 
     public Server() {
         clients = new CopyOnWriteArrayList<>();
         if (!SimpleAuthServise.connect()) {
-            throw new RuntimeException("База данных не доступна");
+            RuntimeException e = new RuntimeException("База данных не доступна");
+            logger.severe("База данных не доступна");
+            throw e;
         }
         authService = new SimpleAuthServise();
 
         try {
             int PORT = 8189;
             server = new ServerSocket(PORT);
-            System.out.println("Server started");
+            logger.info("Server started");
 
             while (true) {
                 socket = server.accept();
-                System.out.println("Client connected");
-                System.out.println("client: " + socket.getRemoteSocketAddress());
+                logger.info("Client connected");
+                logger.info("client: " + socket.getRemoteSocketAddress());
                 new ClientHandler(this, socket);
             }
 
